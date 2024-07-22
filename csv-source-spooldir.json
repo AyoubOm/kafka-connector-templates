@@ -1,0 +1,16 @@
+{
+  "name": "CsvSpoolDir",
+  "config": {
+    "tasks.max": "1",
+    "connector.class": "com.github.jcustenborder.kafka.connect.spooldir.SpoolDirCsvSourceConnector",
+    "input.path": "/Users/ayoub.omari/dev/connect-test/unprocessed",
+    "input.file.pattern": ".*\\.csv",
+    "error.path": "/Users/ayoub.omari/dev/connect-test/error",
+    "finished.path": "/Users/ayoub.omari/dev/connect-test/processed",
+    "halt.on.error": "false",
+    "topic": "csv_data_2",
+    "csv.first.row.as.header": "true",
+    "schema.generation.enabled": "true",
+    "schema.generation.key.fields": "id"
+  }
+}
